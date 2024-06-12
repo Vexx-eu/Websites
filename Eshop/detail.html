@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sokol</title>
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+    <header>
+      
+      <div class="Arc1">
+        <nav class="nav">
+          <a href="#">Objevte</a>
+          <a href="#">O nás</a>
+          <a href="#">Ceník</a>
+          <a href="#">Servis</a>
+          <a href="#">Butiky</a>
+        </nav>
+        <div class="underline"></div>
+      </div>
+      
+    </header>
+    <main>
+
+      <div class="det1">
+        <img src="img/detail.avif"/>
+        <div class="det2">
+          <div><h1>Richard Mille RM 11-03</h1></div><div>
+            <div class="cena">
+              <div>1.650.000 Kč</div><span>1.490.000 Kč</span></div>
+          </div>
+          <div>
+            <p>Richard Mille je luxusní značka švýcarských hodinek, která je známá svou inovativní technologií a futuristickým designem. Hodinky Richard Mille jsou často vyrobeny z exotických materiálů jako titan, uhlíková vlákna, keramika a dokonce i safírové sklo, což je průhledné a velmi odolné materiál.</p>
+            <p>Design hodinek Richard Mille je obvykle velmi moderní a technologicky vypadající, s mnoha složitými detaily a průhlednými částmi, které umožňují nahlédnout dovnitř mechanismu hodinek.Ceny hodinek Richard Mille jsou obvykle ve velmi vysokém cenovém rozpětí, často dosahujících šesti nebo i sedmi ciferných čísel. To je částečně kvůli použitým materiálům a technologiím, ale také kvůli jejich omezené dostupnosti a prestiži značky.</p>
+            <p>Celkově lze říci, že hodinky Richard Mille jsou symbol luxusu a nadčasového designu, který je oblíbený mezi sběrateli a milovníky hodinek po celém světě.</p>
+          </div>
+
+          <div class="butt">
+            <a href="kosik.html">Do Košíku</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="gallery">
+      <img src="img/wa3.jpg" alt="Image 1" class="gallery-image">
+      <img src="img/wa4.jpg" alt="Image 2" class="gallery-image">
+      <img src="img/wa1.jpg" alt="Image 1" class="gallery-image">
+  </div>
+
+  <div class="lightbox" id="lightbox">
+      <span class="close-btn" id="close">&times;</span>
+      <img src="" alt="" class="lightbox-image" id="lightbox-img">
+      <div class="controls">
+          <button id="prev-btn">&lt;</button>
+          <button id="next-btn">&gt;</button>
+      </div>
+  </div>
+  <script>
+
+      const gallery = document.querySelector('.gallery');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const closeBtn = document.getElementById('close');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      const images = Array.from(document.querySelectorAll('.gallery-image'));
+      let currentIndex = 0;
+
+      gallery.addEventListener('click', e => {
+          if (e.target.classList.contains('gallery-image')) {
+              currentIndex = images.indexOf(e.target);
+              showImage();
+              lightbox.style.display = 'flex';
+          }
+      });
+
+      closeBtn.addEventListener('click', () => {
+          lightbox.style.display = 'none';
+      });
+
+      lightbox.addEventListener('click', e => {
+          if (e.target === lightbox) {
+              lightbox.style.display = 'none';
+          }
+      });
+
+      function showImage() {
+          lightboxImg.src = images[currentIndex].src;
+      }
+
+      prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage();
+      });
+
+      nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage();
+      });
+  </script>
+    <section class="sect4">
+
+      <article class="btm1">
+          <a href="#"><img src="img/logo.png" alt="" class="btmlogo"></a>
+          <a href="#" class="st" style="color: white;">STAY UP TO DATE</a>
+            </article>
+      <article class="btm2">
+  <div>
+      <h1>Vyberte jazyk</h1>
+      <a href="#">Česky</a>
+      <a href="#">Slovensky</a>
+      <a href="#">English</a>
+      <a href="#">Tiếng Việt</a>
+      <a href="#">Deutsch</a>
+      <a href="#">Polski</a>
+  </div>
+  <div>
+      <h1>Naše nabídka</h1>
+      <a href="#">Rolex</a>
+      <a href="#">Hodinky</a>
+      <a href="#">Vintage</a>
+      <a href="#">Řemínky</a>
+      <a href="#">Natahovače</a>
+      <a href="#">Servis</a>
+      <a href="#">Butiky</a>
+  </div>
+  <div>
+     <h1>Prozkoumejte</h1> 
+     <a href="#">Partnerství</a>
+     <a href="#">Magazín</a>
+     <a href="#">Náš příběh</a>
+     <a href="#">Kontakty</a>
+     <a href="#">O Nás</a>
+  </div>
+  <div>
+    <h1>Důležité</h1> 
+    <a href="#">Ochrana osobních údajů</a>
+    <a href="#">Informace pro spotřebitele</a>
+    <a href="#">Informace o cookies</a>
+    <a href="#">Nastavení cookies</a>
+ </div>
+      </article>
+  </section>
+    </body>
+    </html>

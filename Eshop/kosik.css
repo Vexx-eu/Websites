@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .Arc1 nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    right: 40px;
+    top: 25%;
+  }
+  .Arc1 a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+  }
+  .Arc1 {
+    position: relative;
+    padding-bottom: 10%;
+  }
+
+  .Arc1 .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 100px;
+    width: 100%; 
+    height:1px;
+    background-color: black;
+  }
+  main h2 {
+    text-align: center;
+  }
+  .hlav {
+    display: flex;
+    align-items: center;
+  }
+  .hlavPr {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .hlavMain {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 0px 9px 20px 0px rgba(82, 82, 82, 0.25);
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .kolecko {
+    height: 12px;
+    width: 12px;
+    background-color: rgb(8, 204, 8);
+    border-radius: 100%;
+  }
+  .badge {
+    color: rgba(18, 170, 18, 1);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 0px;
+  }
+  .hlavPa {
+    width: 100%;
+  }
+  .mnozstvi {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 50px;
+  }
+  .cena{
+  align-items: center;
+  }
+  .mnozstvi p, .mnozstvi a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .mnozstvi :first-child, .mnozstvi :last-child{
+    color: rgba(18, 170, 18, 1);
+    border: 1px solid rgba(18, 170, 18, 1);
+  }
+  .minus, .cislo, .minus{
+    border: 1px solid rgb(224, 224, 222);
+  }
+  .minus {
+    background-color: rgb(235, 235, 235);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .plus{
+    background-color: rgb(235, 235, 235);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .cislo {
+    background-color: white;
+  }
+  .badge p {
+    margin-left: 5px;
+    font-size: 14px
+  }
+  img{
+    max-width: 200px;
+    padding-left: 30px;
+  }
+  .butt {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .butt a {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 25px;
+  }
+
+  
+  @media (width < 1200px){
+    .Arc1 .underline {
+      top: 80px;
+    }
+  }
+  
+  @media (width < 800px) {
+    .hlav{
+      display: flex;
+      flex-direction: column;    
+    }
+    .hlavMain{
+      display: flex;
+      flex-direction: column;
+    }
+    .mnozstvi {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+  }
+    .cena{
+      justify-content: center;
+    }
+    .hlavPr {
+      display: flex;
+      justify-content: center;
+  }
+  .badge {
+    display: flex;
+    justify-content: center;
+}
+  img{
+    max-width: 150px;
+  }
+  .hlavMain{
+    margin-top: 10px;
+  }
+  }
+  @media (width < 900px) {
+    .butt a {
+      text-align: center;
+    }
+    main h2 {
+      margin-top: 25px;
+      font-size: 23px;
+    }
+  }
+  @media (width < 650px){
+    .Arc1 .underline {
+      top: 60px;
+    }
+  }

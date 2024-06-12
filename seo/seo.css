@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,100&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+/*background-image: linear-gradient(to bottom right, #040404, rgb(194, 194, 194));*/
+/*background-image: linear-gradient(to bottom right, rgb(43,59,83),rgb(93, 105, 124), rgb(194, 194, 194));*/
+background-color:rgba(45,62,80,255) ;
+padding: 60px 60px 0px 60px;
+}
+
+header{
+color: white;
+text-align: center;
+}
+
+header article{
+padding-bottom: 20px;
+}
+
+header h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 4em;
+}
+header h3{
+font-family: 'Montserrat', sans-serif;
+font-size: 1.2em
+}
+
+section article h2{
+font-family: 'Montserrat', sans-serif;
+font-size: 1.3em;
+font-weight: bold;
+padding-bottom: 15px;
+text-align: center;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+section article li, p{
+font-family: 'Combo', cursive;
+font-size: 1.2em;
+padding: 5px;
+}
+
+
+ol{
+padding-top: 10px;
+}
+
+section{
+display: flex;
+flex-direction: column;
+}
+
+section article{
+border: 1px solid white;
+border-radius: 25px;
+background-color: white;
+padding: 50px;
+margin: 20px;
+}
+
+footer{
+color: white;
+padding: 30px;
+}
+    
+footer p{
+text-align: center;
+}
+
+article{
+flex: 1;
+align-items: center;
+}
+
+img{
+max-width: max-content;
+width: 100%;
+border-radius: 25px;
+}
+
+.fotka{
+    background-color: transparent;
+    border: transparent;
+    padding: 0px;
+    align-self: center;
+}
+@media (min-width: 1280px){
+    section{
+    display: flex;
+    flex-direction: row;}
+}

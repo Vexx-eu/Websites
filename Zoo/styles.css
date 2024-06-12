@@ -1,0 +1,245 @@
+/* styles.css */
+
+/* Existing styles here... */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    position: relative;
+    max-width: 23%;
+}
+
+.highlight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.highlight-text {
+    background-color: #f8b434;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.highlight-text h3 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.highlight-text h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.wild-encounters {
+    display: flex;
+    background-color: #005bb5;
+    color: white;
+    padding: 50px 20px;
+}
+
+.wild-encounters-image {
+    flex: 1;
+}
+
+.wild-encounters-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wild-encounters-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.wild-encounters-text h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.wild-encounters-text h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.wild-encounters-text p {
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.our-work {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.our-work h2 {
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-item {
+    max-width: 45%;
+    text-align: left;
+    position: relative;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.work-text {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+.work-text h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.work-text h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.work-text p {
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.learn-more-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #ff9900;
+}

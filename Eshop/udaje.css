@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  main {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .Arc1 nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    right: 40px;
+    top: 25%;
+  }
+  .Arc1 a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+  }
+  .Arc1 {
+    position: relative;
+    padding-bottom: 10%;
+  }
+
+  .Arc1 .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 100px;
+    width: 100%; 
+    height:1px;
+    background-color: black;
+  }
+  header {
+    margin-bottom: 5%;
+  }
+  .dod {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    padding: 20px;
+  }
+  .butt {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .butt a {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 25px;
+  }
+
+  @media (width < 1200px){
+    .Arc1 .underline {
+      top: 80px;
+    }
+  }
+
+  @media (width < 650px){
+    .Arc1 .underline {
+      top: 60px;
+    }
+  }
